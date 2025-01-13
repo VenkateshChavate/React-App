@@ -1,0 +1,140 @@
+/* Reset all the default margin and padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ecf0f1;
+  color: #34495e;
+  margin: 0;
+}
+
+/* Navbar Container */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to right, #3498db, #2c3e50); /* Gradient background */
+  padding: 15px 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  z-index: 1000;
+}
+
+/* Navbar Container Flexbox */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Big Heading */
+.navbar-heading {
+  color: white;
+  font-size: 40px; /* Large font size */
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-heading:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  color: #f39c12; /* Color change on hover */
+}
+
+/* Navbar Menu */
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-item {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.navbar-item:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Navbar Buttons (Links) */
+.navbar-buttons {
+  color: white;
+  background-color: transparent;
+  border: 2px solid transparent;
+  font-size: 18px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.navbar-buttons:hover {
+  background-color: white;
+  color: #3498db; /* Text color change on hover */
+  border-color: #3498db;
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow on hover */
+}
+
+.navbar-buttons:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.8); /* Glowing effect on focus */
+}
+
+/* Azure Wallpaper Section */
+.azure-wallpaper {
+  background-image: url('https://example.com/azure-wallpaper.jpg'); /* Replace with your Azure image URL */
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Set the height for the image section */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.azure-text h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #3498db, #2c3e50); /* Azure gradient */
+  -webkit-background-clip: text; /* This clips the background to the text */
+  color: transparent; /* Set color to transparent so background gradient is visible */
+  padding: 10px; /* Optional for some spacing */
+}
+
+.azure-text p {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 300;
+  background: linear-gradient(to right, #3498db, #2c3e50); /* Azure gradient */
+  -webkit-background-clip: text; /* This clips the background to the text */
+  color: transparent; /* Set color to transparent */
+}
+
+/* Responsive Design for Azure Section */
+@media (max-width: 768px) {
+  .azure-wallpaper {
+    height: 300px;
+  }
+
+  .azure-text h2 {
+    font-size: 28px;
+  }
+
+  .azure-text p {
+    font-size: 16px;
+  }
+}
